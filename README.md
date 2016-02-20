@@ -7,7 +7,7 @@
 
 =============
 
-*DateConvert.java* 日期计算转换
+*[DateConvert.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/date/DateConvert.java)* 日期计算转换
 
 	/**
      * 是否循环状态下，计算当前日期与给定日期之间的天数
@@ -30,7 +30,7 @@
 **功能类**相关代码片段
 
 ==================
-*BitmapCompress.java* 图片压缩
+*[BitmapCompress.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/BitmapCompress.java)* 图片压缩
 
 	/**
      * 将图片以等比例压缩。通常用于从文件读取图片
@@ -48,7 +48,7 @@
     public static Bitmap createThumbBitmap(Bitmap bm,int squareW,int squareH)
     
     
-*InputMethod.java* 输入法软键盘相关
+*[InputMethod.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/InputMethod.java)* 输入法软键盘相关
 
 	/**
      * 软键盘的弹出和隐藏监听方法。（原理：通过监听布局变化判断软键盘是否弹出）
@@ -80,7 +80,7 @@
 
 =============
 
-*ScreenParameter.java* 屏幕参数计算
+*[ScreenParameter.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/screen/ScreenParameter.java)* 屏幕参数计算
 
 	//屏幕宽度
     int screenWidth;
@@ -98,28 +98,28 @@
 
 *整理自白话算法*
 
-*Swap.java* 两个数交换的三种方式
+*[Swap.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/Swap.java)* 两个数交换的三种方式
 	
-*BubbleSort.java* 冒泡排序的几种实现
+*[BubbleSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/BubbleSort.java)* 冒泡排序的几种实现
 	
-*InsertSort.java* 直接插入排序的几种实现
+*[InsertSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/InsertSort.java)* 直接插入排序的几种实现
 	
-*SelectSort.java* 直接选择排序
+*[SelectSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/SelectSort.java)* 直接选择排序
 	
-*ShellSort.java* 希尔排序
+*[ShellSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/ShellSort.java)* 希尔排序
 	
-*QuickSort.java* 快速排序
+*[QuickSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/QuickSort.java)* 快速排序
 	
-*MergeSort.java* 归并排序
+*[MergeSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/MergeSort.java)* 归并排序
 	
-*HeapSort.java* 堆排序
+*[HeapSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/HeapSort.java)* 堆排序
 
 ###Package:string
 **字符串**相关代码片段
 
 =============
 
-*CamelCaseUtils.java* 驼峰式与下划线式命名转换
+*[CamelCaseUtils.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/string/CamelCaseUtils.java)* 驼峰式与下划线式命名转换
 
 	/**
      * 转为下划线字符串
