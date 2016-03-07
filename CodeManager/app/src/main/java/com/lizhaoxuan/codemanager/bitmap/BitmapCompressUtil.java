@@ -1,4 +1,4 @@
-package com.lizhaoxuan.codemanager.function;
+package com.lizhaoxuan.codemanager.bitmap;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -7,7 +7,7 @@ import android.graphics.BitmapFactory;
  * 图片压缩工具类
  * Created by zhaoxuan.li on 2015/9/21.
  */
-public class BitmapCompress {
+public class BitmapCompressUtil {
 
     /**
      * 将图片以等比例压缩。通常用于从文件读取图片

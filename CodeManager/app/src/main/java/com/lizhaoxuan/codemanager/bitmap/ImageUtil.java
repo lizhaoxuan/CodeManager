@@ -1,4 +1,4 @@
-package com.lizhaoxuan.codemanager.function;
+package com.lizhaoxuan.codemanager.bitmap;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

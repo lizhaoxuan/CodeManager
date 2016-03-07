@@ -1,138 +1,103 @@
 # CodeManager
-#个人代码片段库
+#代码片段-工具类库
 
 
-###Package:date
-**日期类**相关代码片段
+###package:bitmap
+图片相关
 
-=============
+[BitmapCompressUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/bitmap/BitmapCompressUtil.java) 图片压缩
 
-*[DateConvert.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/date/DateConvert.java)* 日期计算转换
+[BitmapUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/bitmap/BitmapUtiljava) 获取圆角图片
 
-	/**
-     * 是否循环状态下，计算当前日期与给定日期之间的天数
-     */
-    private long calculateDate(Date nowDate, Date targetDate, boolean loop)
-    
-    /**
-     * 字符串转Date
-     */
-    public Date toDate(String date)
-    
-    /**
-     * 拿到Date 年月日
-     */
-    public void getYearMonthDay(Date date)
+[CanvasUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/bitmap/CanvasUtil.java) 图片绘制工具
+
+[ImageUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/bitmap/ImageUtil.java) Image工具类
+
+###package:date
+日期相关
+
+[DateConvertUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/date/DateConvertUtil.java) 日期转换
+
+[DateUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/date/DateUtil.java) 日期工具类
 
 
 
 ###Package:function
-**功能类**相关代码片段
-
-==================
-*[BitmapCompress.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/BitmapCompress.java)* 图片压缩
-
-	/**
-     * 将图片以等比例压缩。通常用于从文件读取图片
-     * @param filename   图片路径名
-     * @param sampleSize  压缩为1/sampleSize
-     * @return
-     */
-    public static Bitmap doBitmapRatio(String filename,int sampleSize)
-    
-    public static Bitmap doBitmapRatio(String filename,int srcWidth,int dstWidth)
-    
-    /**
-     * 生成缩略图，只适合较小的图片进行缩略图生成
-     */
-    public static Bitmap createThumbBitmap(Bitmap bm,int squareW,int squareH)
-    
-    
-*[InputMethod.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/InputMethod.java)* 输入法软键盘相关
-
-	/**
-     * 软键盘的弹出和隐藏监听方法。（原理：通过监听布局变化判断软键盘是否弹出）
-     * 通过监听键盘弹出和隐藏 从而改变布局效果
-     * 纯View内部逻辑改变，且需求随时可能变化，不建议放入model层
-     */
-    public void inputMethodEvent(final View view)
-    
-    /**
-     * 动态隐藏软键盘
-     */
-    public static void hideSoftInput(Activity activity)
-    
-    public static void hideSoftInput(Context context, EditText edit)
-    
-    /**
-     * 动态显示软键盘
-     */
-    public static void showSoftInput(Context context, EditText edit)
-    
-    /**
-     * 动态显示或者是隐藏软键盘
-     */
-    public static void toggleSoftInput(Context context, EditText edit)
+功能类相关代码片段
 
 
-###Package:screen
+[AppUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/AppUtil.java)  APP工具类
+
+[DimenUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/DimenUtil.java)  尺寸工具类
+
+[InputMethodUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/AppUtil.java)  输入法相关
+
+[MD5Util.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/MD5Util.java)  加密工具类
+
+[NetUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/NetUtil.java)  网络工具类
+
+[PreferenceUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/PreferenceUtil.java)  SharedPreferences 工具类
+
+[SharedPreUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/SharedPreUtil.java)  SharedPreferences工具类
+
+[SoftInputManager.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/SoftInputManager.java)  软键盘管理
+
+[UnitUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/function/UnitUtil.java)  单位转换工具类
+
+	
+###package:lang
+java基础类相关
+
+[CamelCaseUtils.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/lang/CamelCaseUtils.java)  驼峰转换
+
+[IntegerUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/lang/IntegerUtil.java)  整形工具类
+
+[CamelCaseUtils.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/lang/StringUtilUtils.java)  String工具类
+
+
+###package:reflection
+java反射相关
+
+[ClassUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/reflection/ClassUtil.java)  Java类型操作工具
+
+[Reflection.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/reflection/Reflection.java) java反射操纵
+
+###package:screen
 **屏幕类**相关代码片段
 
-=============
-
-*[ScreenParameter.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/screen/ScreenParameter.java)* 屏幕参数计算
-
-	//屏幕宽度
-    int screenWidth;
-    //屏幕高度
-    int screenHeight;
-    //状态栏高度
-    int stateHeight;
-    //标题栏高度
-    int titleHeight;
-	public void screenParameter(Activity activity)
+*[ScreenParameter.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/screen/ScreenParameter.java)* 屏幕参数计算
 
 
-###Package:sort
-**算法类**相关代码片段
+###package:sort
+算法类相关代码片段
 
 *整理自白话算法*
 
-*[Swap.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/Swap.java)* 两个数交换的三种方式
+*[Swap.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/Swap.java)* 两个数交换的三种方式
 	
-*[BubbleSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/BubbleSort.java)* 冒泡排序的几种实现
+*[BubbleSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/BubbleSort.java)* 冒泡排序的几种实现
 	
-*[InsertSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/InsertSort.java)* 直接插入排序的几种实现
+*[InsertSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/InsertSort.java)* 直接插入排序的几种实现
 	
-*[SelectSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/SelectSort.java)* 直接选择排序
+*[SelectSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/SelectSort.java)* 直接选择排序
 	
-*[ShellSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/ShellSort.java)* 希尔排序
+*[ShellSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/ShellSort.java)* 希尔排序
 	
-*[QuickSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/QuickSort.java)* 快速排序
+*[QuickSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/QuickSort.java)* 快速排序
 	
-*[MergeSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/MergeSort.java)* 归并排序
+*[MergeSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/MergeSort.java)* 归并排序
 	
-*[HeapSort.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/HeapSort.java)* 堆排序
+*[HeapSort.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/sort/HeapSort.java)* 堆排序
 
-###Package:string
-**字符串**相关代码片段
+###package:stream
+字符串相关代码片段
 
-=============
+*[FileUtil.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/Stream/FileUtil.java)* 文件操作
+	
+*[Stream.java](CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/Stream/Stream.java)* 流操作
 
-*[CamelCaseUtils.java](/CodeManager/app/src/main/java/com/lizhaoxuan/codemanager/string/CamelCaseUtils.java)* 驼峰式与下划线式命名转换
 
-	/**
-     * 转为下划线字符串
-     */
-    public static String toUnderlineName(String s)
-    
-    /**
-     * 转为驼峰式字符串
-     */
-    public static String toCamelCase(String s)
-    
-    /**
-     * 首字母大写的驼峰式
-     */
-    public static String toCapitalizeCamelCase(String s)
+
+
+
 

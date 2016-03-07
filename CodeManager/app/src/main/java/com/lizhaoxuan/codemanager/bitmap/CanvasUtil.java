@@ -1,4 +1,4 @@
-package com.lizhaoxuan.codemanager.function;
+package com.lizhaoxuan.codemanager.bitmap;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;

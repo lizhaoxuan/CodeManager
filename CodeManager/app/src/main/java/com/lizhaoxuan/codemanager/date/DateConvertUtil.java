@@ -11,7 +11,7 @@ import java.util.GregorianCalendar;
  * 日期转换
  * Created by lizhaoxuan on 16/2/20.
  */
-public class DateConvert {
+public class DateConvertUtil {
 
     public static final DateFormat DATE_FORMAT = SimpleDateFormat.getDateInstance();
 

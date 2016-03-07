@@ -12,7 +12,7 @@ import android.widget.EditText;
  * 输入法相关
  * Created by lizhaoxuan on 16/2/20.
  */
-public class InputMethod {
+public class InputMethodUtil {
 
     private int viewHeight = 0;
 
