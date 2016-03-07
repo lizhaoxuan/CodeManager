@@ -1,4 +1,4 @@
-package com.lizhaoxuan.codemanager.string;
+package com.lizhaoxuan.codemanager.lang;
 
 /**
  * 驼峰命名法(CamelCase)和下划线风格(UnderScoreCase)字符串之间的转换工具类
